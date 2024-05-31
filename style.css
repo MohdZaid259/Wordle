@@ -23,7 +23,7 @@ body{
     display: grid;
     grid-template-rows: repeat(6,1fr);
     grid-template-columns: repeat(5,1fr);
-    gap: 4px;
+    gap: 3px;
 }
 .bx{
     width: 100%;
@@ -34,4 +34,18 @@ body{
     text-align: center;
     padding-top: 4px;
     font-size: 2rem;
+}
+.animated{
+    animation: flip 0.5s ease;
+}
+@keyframes flip{
+    0%{
+        transform: scaleY(1);
+    }
+    50%{
+        transform: scaleY(0);
+    }
+    100%{
+        transform: scaleY(1);
+    }
 }
